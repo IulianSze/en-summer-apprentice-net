@@ -5,14 +5,14 @@ namespace Practica_.net.Repositories
 {
     public interface IEventRepository
     {
-        IEnumerable<Event> GetAll();
+       Task<IEnumerable<Event>> GetAll();
 
-       Event GetById(int id);
+      Task<Event> GetById(int id);
 
        // int Add(Event @event);
 
-        void Update(Event @event);
+        Task Update(Event @event);
 
-        void Delete(Event @event);
+        Task Delete(Event @event);
     }
 }

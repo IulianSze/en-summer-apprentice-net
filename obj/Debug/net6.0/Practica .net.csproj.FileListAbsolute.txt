@@ -89,3 +89,7 @@ D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Castle.Core.dll
 D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
 D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\AutoMapper.dll
 D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\nlog.config
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\NLog.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\NLog.Extensions.Logging.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\NLog.Web.AspNetCore.dll

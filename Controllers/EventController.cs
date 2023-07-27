@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using Practica_.net.Models;
 using Practica_.net.Models.DTO;
 using Practica_.net.Repositories;
@@ -21,9 +23,9 @@ namespace Practica_.net.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<EventDto>> GetAll()
+        public async Task<ActionResult<List<EventDto>>> GetAll()
         { 
-            var events = _eventRepository.GetAll();
+            var events = await _eventRepository.GetAll();
             //var dtoEvents = events.Select(e =>// new EventDto()
            // {
                 /*EventId = e.EventId,
@@ -37,9 +39,9 @@ namespace Practica_.net.Controllers
             return Ok(dtos);
         }
         [HttpGet]
-        public ActionResult<EventDto> GetById(int id)
+        public async Task<ActionResult<EventDto>> GetById(int id)
         {
-            var @event = _eventRepository.GetById(id);
+            var @event =await _eventRepository.GetById(id);
 
             if (@event == null)
             {
@@ -59,27 +61,29 @@ namespace Practica_.net.Controllers
             return Ok(dtoEvent);
         }
         [HttpPatch]
-        public ActionResult<EventPatchDto> Patch(EventPatchDto eventPatch)
+        public async Task<ActionResult<EventPatchDto>> Patch(EventPatchDto eventPatch)
         {
-            var eventEntity =  _eventRepository.GetById(eventPatch.EventId);
+            var eventEntity = await _eventRepository.GetById(eventPatch.EventId);
             if(eventEntity== null)
             {
                 return NotFound();
             }
-            eventEntity.EventName=eventPatch.EventName;
-            eventEntity.EventDescription=eventPatch.EventDescription; 
-            _eventRepository.Update(eventEntity);
-            return Ok(eventEntity);
+            if (!eventPatch.EventName.IsNullOrEmpty()) eventEntity.EventName = eventPatch.EventName;
+            if (!eventPatch.EventDescription.IsNullOrEmpty()) eventEntity.EventDescription = eventPatch.EventDescription;
+            //var eventDto = _mapper.Map<EventDto>(eventEntity)
+           await _eventRepository.Update(eventEntity);
+            var dtoEvent = _mapper.Map<EventDto>(eventEntity);
+            return Ok(dtoEvent);
         }
         [HttpDelete]
-        public ActionResult<EventPatchDto> Delete(int id)
+        public async Task<ActionResult<EventPatchDto>> Delete(int id)
         {
-            var eventEntity = _eventRepository.GetById(id);
+            var eventEntity = await _eventRepository.GetById(id);
             if (eventEntity == null)
             {
                 return NotFound();
             }
-            _eventRepository.Delete(eventEntity);
+          await _eventRepository.Delete(eventEntity);
           
             return NoContent();
         }

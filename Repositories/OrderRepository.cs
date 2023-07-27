@@ -13,19 +13,24 @@ namespace Practica_.net.Repositories
         {
             _dbContext = new TicketManagementSystemContext();
         }
-        public IEnumerable<Order> GetAll()
+        public async Task<IEnumerable<Order>> GetAll()
         {
             var orders = _dbContext.Orders.Include(e => e.TicketCategory).Include(e => e.TicketCategory.Event);
             return orders;
         }
 
-        public Order GetById(int id) {
+        public async Task<Order> GetById(int id) {
             Order order = _dbContext.Orders.Where(o=>o.OrderId== id).Include(e=>e.TicketCategory).ThenInclude(e=>e.Event).FirstOrDefault();
             return order;
         }
-        public void Update(Order order)
+        public async Task Update(Order order)
         {
             _dbContext.Entry(@order).State = EntityState.Modified; 
+            _dbContext.SaveChanges();
+        }
+        public async Task Delete(Order order)
+        {
+            _dbContext.Remove(@order);
             _dbContext.SaveChanges();
         }
     }

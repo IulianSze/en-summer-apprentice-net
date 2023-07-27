@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Practica_.net.Models;
 using Practica_.net.Repositories;
+using System.Runtime.CompilerServices;
 
 namespace Practica_.net.Repositories
 {
@@ -12,21 +13,18 @@ namespace Practica_.net.Repositories
         {
             _dbContext = new TicketManagementSystemContext();
         }
-        public IEnumerable<Event> GetAll()
+        public async Task<IEnumerable<Event>> GetAll()
         {
             var events = _dbContext.Events.Include(e=>e.EventType).Include(e=>e.Venue);
             return events;
         }
-        public  Event GetById(int id)
+        public async Task<Event> GetById(int id)
         {
-            var @event = _dbContext.Events.Where(e=>e.EventId == id).Include(e => e.EventType).Include(e => e.Venue).FirstOrDefault();
-            /*if (@event != null)
-            {
-                throw new Exception("The object doesn't exist");
-            }*/
-            return @event;
+                var @event = _dbContext.Events.Where(e => e.EventId == id).Include(e => e.EventType).Include(e => e.Venue).FirstOrDefault();
+
+                return @event;
         }
-        public void Update(Event @event)
+        public async Task Update(Event @event)
         {
             /*var eventEntity = GetById(@event.EventId);
             eventEntity = @event;*/
@@ -34,7 +32,7 @@ namespace Practica_.net.Repositories
             _dbContext.SaveChanges();
         }
 
-        public void Delete(Event @event)
+        public async Task Delete(Event @event)
         {
             _dbContext.Remove(@event);
             _dbContext.SaveChanges();

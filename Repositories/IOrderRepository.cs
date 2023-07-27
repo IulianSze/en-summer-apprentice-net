@@ -5,10 +5,11 @@ namespace Practica_.net.Repositories
 {
     public interface IOrderRepository
     {
-        IEnumerable<Order> GetAll();
+       Task< IEnumerable<Order>> GetAll();
 
-        Order GetById(int id);
+        Task<Order> GetById(int id);
 
-        void Update(Order order);
+        Task Update(Order order);
+        Task Delete(Order order);
     }
 }
