@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Practica_.net.Middleware;
 using Practica_.net.Models;
 using Practica_.net.Models.DTO;
 using Practica_.net.Repositories;
@@ -15,11 +16,13 @@ namespace Practica_.net.Controllers
     {
         private readonly IEventRepository _eventRepository;
         private readonly IMapper _mapper;
+        private readonly ILogger<ExceptionHandlingMiddleware> _logger;
 
-        public EventController(IEventRepository eventRepository, IMapper mapper)
+        public EventController(IEventRepository eventRepository, IMapper mapper, ILogger<ExceptionHandlingMiddleware> logger)
         {
             _eventRepository = eventRepository;
             _mapper = mapper;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -43,10 +46,6 @@ namespace Practica_.net.Controllers
         {
             var @event =await _eventRepository.GetById(id);
 
-            if (@event == null)
-            {
-                return NotFound();
-            }
 
             /*var dtoEvent = new EventDto()
             {
@@ -64,10 +63,7 @@ namespace Practica_.net.Controllers
         public async Task<ActionResult<EventPatchDto>> Patch(EventPatchDto eventPatch)
         {
             var eventEntity = await _eventRepository.GetById(eventPatch.EventId);
-            if(eventEntity== null)
-            {
-                return NotFound();
-            }
+           
             if (!eventPatch.EventName.IsNullOrEmpty()) eventEntity.EventName = eventPatch.EventName;
             if (!eventPatch.EventDescription.IsNullOrEmpty()) eventEntity.EventDescription = eventPatch.EventDescription;
             //var eventDto = _mapper.Map<EventDto>(eventEntity)

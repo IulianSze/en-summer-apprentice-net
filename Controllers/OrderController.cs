@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Identity.Client;
+using Practica_.net.Middleware;
 using Practica_.net.Models;
 using Practica_.net.Models.DTO;
 using Practica_.net.Repositories;
@@ -14,9 +15,11 @@ namespace Practica_.net.Controllers
     {
         private readonly IOrderRepository _orderRepository;
         private readonly IMapper _mapper;
-        public OrderController(IOrderRepository orderRepository, IMapper mapper) {
+        private readonly ILogger<ExceptionHandlingMiddleware> _logger;
+        public OrderController(IOrderRepository orderRepository, IMapper mapper,ILogger<ExceptionHandlingMiddleware> logger) {
             _orderRepository = orderRepository;
             _mapper = mapper;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -41,10 +44,7 @@ namespace Practica_.net.Controllers
             public async Task<ActionResult<OrderDto>> GetOrderById(int id)
             {
                 Order order = await _orderRepository.GetById(id);
-                if (order == null)
-                {
-                    return NotFound();
-                }
+               
                 /*OrderDto dtoOrder = new OrderDto()
                 {
                     OrderId = order.OrderId,
@@ -61,10 +61,6 @@ namespace Practica_.net.Controllers
         public async Task<ActionResult<OrderPatchDto>> Patch(OrderPatchDto orderPatch)
         {
             var orderEntity = await _orderRepository.GetById(orderPatch.OrderId);
-            if (orderEntity == null)
-            {
-                return NotFound();
-            }
             //_mapper.Map(orderPatch, orderEntity);
             orderEntity.TicketCategoryId = orderPatch.TicketCategoryId;
             orderEntity.NumberOfTickets=orderPatch.NumberOfTickets;
@@ -77,10 +73,7 @@ namespace Practica_.net.Controllers
         public async Task<ActionResult<EventPatchDto>> Delete(int id)
         {
             var orderEntity = await _orderRepository.GetById(id);
-            if (orderEntity == null)
-            {
-                return NotFound();
-            }
+           
             _orderRepository.Delete(orderEntity);
 
             return NoContent();

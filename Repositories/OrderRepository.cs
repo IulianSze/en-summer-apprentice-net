@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Practica_.net.Exceptions;
 using Practica_.net.Models;
 using Practica_.net.Models.DTO;
 using Practica_.net.Repositories;
@@ -20,18 +22,20 @@ namespace Practica_.net.Repositories
         }
 
         public async Task<Order> GetById(int id) {
-            Order order = _dbContext.Orders.Where(o=>o.OrderId== id).Include(e=>e.TicketCategory).ThenInclude(e=>e.Event).FirstOrDefault();
+            Order order = await _dbContext.Orders.Where(o => o.OrderId == id).Include(e=>e.TicketCategory).ThenInclude(e=>e.Event).FirstOrDefaultAsync();
+            if (order == null)
+                throw new EntityNotFoundException(id, nameof(Order));
             return order;
         }
         public async Task Update(Order order)
         {
-            _dbContext.Entry(@order).State = EntityState.Modified; 
-            _dbContext.SaveChanges();
+            _dbContext.Entry(@order).State = EntityState.Modified;
+            _dbContext.SaveChangesAsync();
         }
         public async Task Delete(Order order)
         {
             _dbContext.Remove(@order);
-            _dbContext.SaveChanges();
+            _dbContext.SaveChangesAsync();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Practica_.net.Exceptions;
 using Practica_.net.Models;
 using Practica_.net.Repositories;
 using System.Runtime.CompilerServices;
@@ -20,9 +21,11 @@ namespace Practica_.net.Repositories
         }
         public async Task<Event> GetById(int id)
         {
-                var @event = _dbContext.Events.Where(e => e.EventId == id).Include(e => e.EventType).Include(e => e.Venue).FirstOrDefault();
+                var @event =await _dbContext.Events.Where(e => e.EventId == id).Include(e => e.EventType).Include(e => e.Venue).FirstOrDefaultAsync();
+            if (@event == null)
+                throw new EntityNotFoundException(id, nameof(Event));
 
-                return @event;
+            return @event;
         }
         public async Task Update(Event @event)
         {
