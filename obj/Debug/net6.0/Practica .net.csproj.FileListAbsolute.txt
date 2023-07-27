@@ -1,0 +1,91 @@
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\appsettings.Development.json
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\appsettings.json
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Practica .net.exe
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Practica .net.deps.json
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Practica .net.runtimeconfig.json
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Practica .net.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Practica .net.pdb
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Azure.Core.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Azure.Identity.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Humanizer.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.CodeDom.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Memory.Data.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Text.Json.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.csproj.AssemblyReference.cache
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.GeneratedMSBuildEditorConfig.editorconfig
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.AssemblyInfoInputs.cache
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.AssemblyInfo.cs
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.csproj.CoreCompileInputs.cache
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.MvcApplicationPartsAssemblyInfo.cs
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.MvcApplicationPartsAssemblyInfo.cache
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\staticwebassets\msbuild.Practica .net.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\staticwebassets\msbuild.build.Practica .net.props
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Practica .net.props
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Practica .net.props
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\staticwebassets.build.json
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\staticwebassets.development.json
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\scopedcss\bundle\Practica .net.styles.css
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.csproj.CopyComplete
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.dll
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\refint\Practica .net.dll
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.pdb
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\Practica .net.genruntimeconfig.cache
+D:\Practica ENDAVA\Practica .net\obj\Debug\net6.0\ref\Practica .net.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Castle.Core.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\AutoMapper.dll
+D:\Practica ENDAVA\Practica .net\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
